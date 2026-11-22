@@ -29,7 +29,7 @@ public class TP1 {
         }
 
         // Affichage 
-        System.out.println("\n--- Liste des etudiants ---");
+        System.out.println("\n Liste des etudiants ");
         for (int i = 0; i < n; i++) {
             System.out.println(noms[i] + " : " + notes[i]);
         }
@@ -98,7 +98,7 @@ public class TP1 {
         int choix;
 
         do {
-            System.out.println("\n===== TP1 : Elements de base du langage Java =====");
+            System.out.println("\n TP1 : Elements de base du langage Java ");
             System.out.println("1. Exercice 1 : etudiants (noms et notes)");
             System.out.println("2. Exercice 2 : categorie d'un enfant");
             System.out.println("3. Exercice 3 : nombres pairs jusqu'a N");
