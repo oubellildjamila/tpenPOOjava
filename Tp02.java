@@ -5,10 +5,10 @@ public class TP1 {
     // Un seul Scanner pour tout le programme (static pour que toutes les méthodes l'utilisent)
     static Scanner sc = new Scanner(System.in);
 
-    // ==========================================================
+    
     // EXERCICE 1 : saisir les noms et les notes de n étudiants,
     //              puis afficher ces informations
-    // ==========================================================
+
     static void exercice1() {
         System.out.print("Nombre d'etudiants : ");
         int n = sc.nextInt();
@@ -18,7 +18,7 @@ public class TP1 {
         String[] noms = new String[n];
         double[] notes = new double[n];
 
-        // --- Saisie ---
+        //  Saisie
         for (int i = 0; i < n; i++) {
             System.out.print("Nom de l'etudiant " + (i + 1) + " : ");
             noms[i] = sc.nextLine();   // nextLine() pour lire un nom (avec espaces possibles)
@@ -28,18 +28,17 @@ public class TP1 {
             sc.nextLine();             // vide le retour à la ligne laissé par nextDouble()
         }
 
-        // --- Affichage ---
+        // Affichage 
         System.out.println("\n--- Liste des etudiants ---");
         for (int i = 0; i < n; i++) {
             System.out.println(noms[i] + " : " + notes[i]);
         }
     }
 
-    // ==========================================================
     // EXERCICE 2 : afficher la catégorie d'un enfant selon son âge
     //   poussin : 6-7 ans | pupille : 8-9 ans
     //   minime : 10-11 ans | cadet : 12 ans et plus
-    // ==========================================================
+ 
     static void exercice2() {
         System.out.print("Age de l'enfant : ");
         int age = sc.nextInt();
@@ -60,9 +59,9 @@ public class TP1 {
         }
     }
 
-    // ==========================================================
+   
     // EXERCICE 3 : afficher les nombres pairs entre 0 et N
-    // ==========================================================
+
     static void exercice3() {
         System.out.print("Entrez N : ");
         int n = sc.nextInt();
@@ -77,10 +76,10 @@ public class TP1 {
         }
     }
 
-    // ==========================================================
+ 
     // EXERCICE 4 : afficher les arguments de la ligne de commande
     //   Exemple : java TP1 arg1 arg2 arg3
-    // ==========================================================
+
     static void exercice4(String[] args) {
         // args.length = nombre d'arguments donnés au lancement du programme
         if (args.length == 0) {
@@ -92,9 +91,9 @@ public class TP1 {
         }
     }
 
-    // ==========================================================
-    // PROGRAMME PRINCIPAL : menu pour choisir l'exercice
-    // ==========================================================
+  
+    // PROGRAMME PRINCIPAL : menu pour choisir l'exercice 
+
     public static void main(String[] args) {
         int choix;
 
